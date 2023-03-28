@@ -47,6 +47,34 @@ void loop() {
   delay(1000);
 }
 ```
+## custom return
+add custom return for some purpose
+```cpp
+timeClient.getShortFormattedTime()
+ /**
+   * @return time formatted like `hh:mm`
+   */
+timeClient.getFormattedDate()
+ /**
+   * @return time formatted like `DD:MM:YY`
+   */
+timeClient.getFullFormattedTime()
+  /**
+   * @return time formatted like `YYYY:MM:DD hh:mm:ss`
+   */
+timeClient.getYear()
+/**
+   * @return int year
+     */
+timeClient.getMonth()
+/**
+   * @return int month
+     */
+timeClient.getDate()
+/**
+   * @return int date
+     */
+```
 
 ## Function documentation
 `getEpochTime` returns the Unix epoch, which are the seconds elapsed since 00:00:00 UTC on 1 January 1970 (leap seconds are ignored, every day is treated as having 86400 seconds). **Attention**: If you have set a time offset this time offset will be added to your epoch timestamp.
