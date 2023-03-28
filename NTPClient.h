@@ -108,7 +108,7 @@ public:
   String getShortFormattedTime();
 
   /**
-   * @return time formatted like `DD:MM:YYYY`
+   * @return time formatted like `DD:MM:YY`
    */
   String getFormattedDate();
 
